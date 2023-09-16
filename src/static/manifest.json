@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "My Chrome Extension with React and ShadowDOM",
+  "version": "1.0.0",
+  "action": { "default_popup": "index.html" },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "js": ["src/content/google.tsx"]
+    }
+  ]
+}
